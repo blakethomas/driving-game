@@ -29,13 +29,13 @@ class Car {
 
 class Window {
   constructor(width, height, car){
-
     this.width = width
-    this.height =  height
+    this.height = height
     this.car = camry
   }
 }
 
+function makeCar(car){
 const $carHolder = document.createElement('div')
 const $carImage = document.createElement('img')
 $carImage.src = 'http://downloadclipart.org/do-upload/clipart/2017-07/Car_automobile_vehicle_clipart.png'
@@ -44,6 +44,8 @@ $carImage.height = '100'
 $carImage.setAttribute('style', 'position: absolute;')
 $carHolder.appendChild($carImage)
 document.body.appendChild($carHolder)
+}
 
 const camry = new Car('north', 0, '0, 0')
 const gameWindow = new Window(500, 500)
+makeCar(camry)
